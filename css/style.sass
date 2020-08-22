@@ -1,0 +1,605 @@
+@import "../_sass/main"
+
+/*БЛОК 1*/
+.slider1
+  width: 100%
+  background: url("../img/slilder1-bgr.png") no-repeat
+  background-size: contain
+  position: relative
+  height: 994px
+  .decor2
+    position: absolute
+    top: 20vh
+    left: 45vw
+  .decor3
+    position: absolute
+    top: 70vh
+    left: 80vw
+
+.slider1::before
+  content: ""
+  position: absolute
+  background: linear-gradient(61deg, rgb(17, 0, 255, 0.5) 0%, rgb(170, 85, 243, 0.5) 100%)
+  width: 100%
+  height: 100%
+  clip-path: polygon(0 32%, 0 0, 100% 0, 100% 100%)
+
+.slider1::before
+  content: url("../img/decor1.png")
+  position: absolute
+
+.slider1-top
+  max-width: 1570px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  padding: 80px 40px
+
+.slider1-logo
+  z-index: 1
+  font-family: 'Roboto', sans-serif
+  font-weight: 700
+  font-size: 40px
+
+.slider1-logo
+   p
+    background: linear-gradient(135deg, #ffffff 15%, #ffea00 15%, #ffea00 40%, #ffffff 40%, #ffffff 50%, #ffea00 50%, #ffea00 75%, #ffffff 75%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.slider1-top-button
+  z-index: 1
+  width: 371px
+  height: 65px
+  background: #ffffff
+  display: flex
+  justify-content: space-between
+  border-radius: 187.5px
+  box-shadow: -1px 5px 24px 1px rgba(189,227,239,0.75)
+  .line
+    border-left: 1px solid #e0e0e0
+    height: 37px
+    width: 2px
+  .collection p::after
+    content: "\02C5"
+    margin-left: 17px
+  .search p, .collection p
+    font-weight: 600
+    font-size: 18px
+    font-family: 'Open Sans', sans-serif
+  .search, .line, .collection
+    margin: auto
+  .search
+    display: flex
+  .search
+    img
+      margin-right: 17px
+  .search:hover, .collection:hover
+    cursor: pointer
+
+
+.slider1-center
+  max-width: 1570px
+  margin: 80px auto 0 auto
+  padding-right: 40px
+  padding-left: 40px
+
+.slider1-content
+  margin-left: auto
+  position: relative
+  max-width: 514px
+
+.slider1-title
+  max-width: 512px
+  p
+    font-family: 'Roboto', sans-serif
+    font-weight: 700
+    font-size: 115px
+    span
+      color: #ffffff
+
+.slider1-sale
+  color: #ffffff
+  margin: 17px 0 78px 9px
+  p
+    font-family: 'Roboto', sans-serif
+    font-size: 50px
+    span
+      color: #fbf934
+
+.slider1-button
+  display: flex
+  width: 202px
+  height: 60px
+  background: #ffffff
+  border-radius: 101px
+  box-shadow: -1px 5px 24px 1px rgba(189,227,239,0.75)
+  p
+    font-weight: 600
+    font-size: 18px
+    font-family: 'Open Sans', sans-serif
+  p::after
+    content: "	\2192"
+    color: #7048e2
+    margin-left: 17px
+  .details
+    margin: auto
+
+.slider1-button:hover
+  background: #f3e5ff
+  cursor: pointer
+
+/*БЛОК 2*/
+.slider2
+  z-index: 2
+  max-width: 1381px
+  margin: -50px auto 0 auto
+  position: relative
+  background: #ffffff
+  box-shadow: -1px 5px 47px 3px rgba(236,235,253,0.75)
+  .decor4, .decor5, .decor6, .decor7, .decor8, .decor9, .decor10
+    position: absolute
+  .decor4
+    top: 10vh
+    left: 14vw
+  .decor5
+    top: 8vh
+    left: 42vw
+  .decor6
+    top: 7vh
+    left: 65vw
+  .decor7
+    top: 74vh
+    left: 69vw
+  .decor8
+    top: 110vh
+    z-index: -1
+    left: 70vw
+  .decor9
+    z-index: -1
+    top: 50vh
+    left: -3.6vw
+  .decor10
+    top: 120vh
+    left: -2.3vw
+
+
+.slider2-title
+  text-align: center
+  padding-top: 96px
+  box-sizing: border-box
+  position: relative
+  p
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+    font-size: 50px
+
+.slider2-content
+  max-width: 1170px
+  margin: 117px auto 0 auto
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding-bottom: 96px
+  .content
+    width: 352px
+    height: 452px
+    box-sizing: border-box
+    padding-top: 36px
+    a
+      text-decoration: none
+      color: #000000
+    .like, .comment, .button
+      display: none
+    .image
+      width: 260px
+      height: 262px
+      margin: 0 auto
+    .name, .price
+      text-align: center
+    .name
+      margin-bottom: 10px
+      margin-top: 20px
+      p
+        font-family: 'Open Sans', sans-serif
+        font-size: 18px
+    .price
+      p
+        font-family: 'Open Sans', sans-serif
+        font-size: 25px
+        font-weight: 600
+  .content:hover
+    position: relative
+    box-shadow: -1px 5px 47px 3px rgba(221,223,224,0.75)
+    .review
+      width: 312px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+      top: 20px
+      left: 20px
+      position: absolute
+      .like, .comment
+        display: flex
+      .like p, .comment p
+        font-family: 'Open Sans', sans-serif
+        font-size: 14px
+        color: #bbbbbb
+      .like img, .comment img
+        margin-right: 10px
+    .price
+      p
+        color: #8c84f9
+    .button, .like, .comment
+      display: block
+    .button
+      display: flex
+      width: 202px
+      height: 60px
+      border-radius: 101px
+      background-image: linear-gradient(26.0deg, #8c84f9 26%, #a165f4 73%)
+      box-shadow: -1px 5px 24px 1px rgba(239,239,253,0.75)
+      margin: 30px auto 0 auto
+      p
+        font-family: 'Open Sans', sans-serif
+        font-weight: 600
+        font-size: 20px
+        margin: auto
+        color: #ffffff
+    .button:hover
+      cursor: pointer
+
+/*БЛОК 3*/
+.slider3
+  width: 100%
+  background: #ffffff
+  position: relative
+  .decor11, .decor12, .decor13
+    position: absolute
+  .decor11
+    top: 60vh
+    left: 17vw
+  .decor12
+    top: 40vh
+    left: 84vw
+  .decor13
+    top: 26vh
+    left: 32vw
+
+.slider3-content
+  max-width: 1170px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  padding: 43px 40px 100px 40px
+
+.slider3-content-left
+  max-width: 512px
+  .title
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+    font-size: 50px
+    margin-bottom: 20px
+    margin-top: 258px
+  .text1
+    font-family: 'Open Sans', sans-serif
+    font-size: 25px
+    margin-bottom: 20px
+    span
+      color: #8d83f9
+  .text2
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    margin-bottom: 290px
+    color: #909090
+
+.slider3-img
+  position: relative
+  margin: 0 auto
+  .img1
+    /*margin-left: 30px*/
+    margin-top: 120px
+    z-index: 1
+    position: relative
+  .img2
+    position: absolute
+    left: 85px
+    z-index: 0
+
+/*БЛОК 4*/
+
+.slider4
+  z-index: 2
+  max-width: 1381px
+  margin: -50px auto 0 auto
+  position: relative
+  background: #ffffff
+  box-shadow: -1px 5px 47px 3px rgba(236,235,253,0.75)
+  .decor14, .decor15, .decor16, .decor17, .decor18, .decor19
+    position: absolute
+  .decor14
+    top: 90vh
+    left: -2vw
+  .decor15
+    top: 10vh
+    left: 2vw
+  .decor16
+    top: 10vh
+    left: 40vw
+  .decor17
+    top: 60vh
+    left: 70vw
+  .decor18
+    top: 30vh
+    left: 64vw
+  .decor19
+    top: 30vh
+    left: 10vw
+
+.slider4-title
+  text-align: center
+  padding-top: 96px
+  padding-bottom: 104px
+  box-sizing: border-box
+  position: relative
+  p
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+    font-size: 50px
+
+.slider4-menu
+  max-width: 1105px
+  box-shadow: -1px 5px 47px 3px rgba(239,239,240,0.75)
+  height: 66px
+  margin: 0 auto 80px auto
+  ul
+    display: flex
+    justify-content: space-between
+    padding: 0 112px
+    height: inherit
+    li
+      list-style-type: none
+      font-family: 'Open Sans', sans-serif
+      font-weight: 600
+      font-size: 15px
+      height: auto
+      margin: auto 0
+    .menu-list:hover
+      color: #b394fa
+      cursor: pointer
+
+
+.slider4-active
+  font-size: 20px !important
+  text-shadow: rgba(213,199,247,0.75) 0 7px 2px
+  color: #b394fa
+
+.slider4-list1, .slider4-list2, .slider4-list4, .slider4-list5, .slider4-list6
+  display: none
+.slider4-name1, .slider4-name2, .slider4-name4, .slider4-name5, .slider4-name6
+  display: none
+.slider4-like1, .slider4-like2, .slider4-like4, .slider4-like5, .slider4-like6
+  display: none
+.slider4-price1, .slider4-price2, .slider4-price4, .slider4-price5, .slider4-price6
+  display: none
+.slider4-comment1, .slider4-comment2, .slider4-comment4, .slider4-comment5, .slider4-comment6
+  display: none
+
+
+.slider4-content
+  max-width: 1170px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding-bottom: 96px
+  .content
+    width: 352px
+    height: 462px
+    box-sizing: border-box
+    padding-top: 36px
+    a
+      text-decoration: none
+      color: #000000
+    .like, .comment, .button
+      display: none
+    .image
+      height: 284px
+      margin: 0 auto
+      width: 262px
+    .name, .price
+      text-align: center
+    .name
+      margin-bottom: 10px
+      margin-top: 20px
+      p
+        font-family: 'Open Sans', sans-serif
+        font-size: 18px
+    .price
+      p
+        font-family: 'Open Sans', sans-serif
+        font-size: 25px
+        font-weight: 600
+  .content:hover
+    position: relative
+    box-shadow: -1px 5px 47px 3px rgba(221,223,224,0.75)
+    .review
+      width: 312px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+      top: 20px
+      left: 20px
+      position: absolute
+      .like, .comment
+        display: flex
+      .like p, .comment p
+        font-family: 'Open Sans', sans-serif
+        font-size: 14px
+        color: #bbbbbb
+      .like img, .comment img
+        margin-right: 10px
+    .price
+      p
+        color: #8c84f9
+        font-size: 25px
+    .button, .like, .comment
+      display: block
+    .button
+      display: flex
+      width: 202px
+      height: 60px
+      border-radius: 101px
+      background-image: linear-gradient(26.0deg, #8c84f9 26%, #a165f4 73%)
+      box-shadow: -1px 5px 24px 1px rgba(239,239,253,0.75)
+      margin: 20px auto 0 auto
+      p
+        font-family: 'Open Sans', sans-serif
+        font-weight: 600
+        font-size: 20px
+        margin: auto
+        color: #ffffff
+    .button:hover
+      cursor: pointer
+      background-image: linear-gradient(26.0deg, #b7acfc 26%, #c598f9 73%)
+
+
+/*БЛОК 5*/
+
+.slider5
+  width: 100%
+  background: #8c84f9
+  margin-top: -50px
+.slider5-content
+  padding: 175px 40px 175px 40px
+  max-width: 1024px
+  margin: 0 auto
+  position: relative
+  .title
+    text-align: center
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+    font-size: 50px
+    color: #ffffff
+    margin-bottom: 84px
+  .text
+    font-family: 'Open Sans', sans-serif
+    font-size: 150px
+    text-transform: uppercase
+    color: #ffffff
+    font-weight: 900
+    text-align: center
+    opacity: 4%
+    position: absolute
+    top: 100px
+  .form
+    display: flex
+    form
+      margin: 0 auto
+      input[type="email"]
+        width: 847px
+        height: 71px
+        background: #ffffff
+        border-radius: 423.5px
+        border: none
+        box-shadow: none
+      input[placeholder]
+        font-family: 'Open Sans', sans-serif
+        font-size: 20px
+        color: #333333
+        padding-left: 30px
+        box-sizing: border-box
+      input[type="submit"]
+        width: 198px
+        height: 60px
+        color: #ffffff
+        font-family: 'Open Sans', sans-serif
+        font-weight: 600
+        font-size: 20px
+        border-radius: 99px
+        border: none
+        box-shadow: none
+        background: linear-gradient(28.0deg, #8c84f9 26%, #9c6cf5 73%)
+        margin-top: 5px
+        margin-left: -204px
+        cursor: pointer
+        outline: none
+        position: relative
+      input[type="submit"]:hover
+        background: linear-gradient(28.0deg, #b7acfc 26%, #c19cfa 73%)
+
+/*БЛОК 6*/
+.slider6-top
+  max-width: 555px
+  padding: 77px 40px 10px 40px
+  margin: 0 auto
+  .logo
+    text-align: center
+    margin-bottom: 47px
+    p
+      font-family: 'Roboto', sans-serif
+      font-size: 40px
+      color: #222222
+      font-weight: 600
+  .menu
+    margin-bottom: 50px
+    ul
+      display: flex
+      justify-content: space-between
+      li
+        list-style-type: none
+        a
+          font-family: 'Open Sans', sans-serif
+          font-weight: 600
+          font-size: 18px
+          text-decoration: none
+          color: #404040
+        a:hover
+          color: #8c84f9
+  .social
+    display: flex
+    justify-content: space-between
+    max-width: 310px
+    margin: 0 auto 50px auto
+    .p
+      width: 57px
+      height: 57px
+      border-radius: 50%
+      border: 3px solid #f6f5f7
+      display: flex
+      box-sizing: border-box
+      a
+        display: flex
+        width: 100%
+        height: 100%
+        div
+          margin: auto
+          img
+            opacity: 70%
+    .p:hover
+      background: linear-gradient(27.0deg, #8c84f9 8%, #9b6df5 91%)
+      border: none
+      box-shadow: -2px 8px 19px 0px rgba(207,207,208,0.75)
+      img
+        filter: invert(1)
+        opacity: 100%
+
+
+.slider6-bottom
+  width: 100%
+  background: #f6f5f7
+  padding-top: 25px
+  padding-bottom: 25px
+  p
+    text-align: center
+    font-family: 'Montserrat', sans-serif
+    font-size: 15px
+    color: #777777
+
+@import "../_sass/media"
+
+
+
+
+
+
