@@ -1,5 +1,9 @@
 @import "../_sass/main"
 
+%flex
+  display: flex
+  justify-content: space-between
+
 /*БЛОК 1*/
 .slider1
   width: 100%
@@ -7,12 +11,13 @@
   background-size: contain
   position: relative
   height: 994px
+  .decor1
+    top: 0
+    left: 0
   .decor2
-    position: absolute
     top: 20vh
     left: 45vw
   .decor3
-    position: absolute
     top: 70vh
     left: 80vw
 
@@ -24,15 +29,10 @@
   height: 100%
   clip-path: polygon(0 32%, 0 0, 100% 0, 100% 100%)
 
-.slider1::before
-  content: url("../img/decor1.png")
-  position: absolute
-
 .slider1-top
+  @extend %flex
   max-width: 1570px
   margin: 0 auto
-  display: flex
-  justify-content: space-between
   padding: 80px 40px
 
 .slider1-logo
@@ -48,12 +48,11 @@
     -webkit-text-fill-color: transparent
 
 .slider1-top-button
+  @extend %flex
   z-index: 1
   width: 371px
   height: 65px
   background: #ffffff
-  display: flex
-  justify-content: space-between
   border-radius: 187.5px
   box-shadow: -1px 5px 24px 1px rgba(189,227,239,0.75)
   .line
@@ -66,7 +65,6 @@
   .search p, .collection p
     font-weight: 600
     font-size: 18px
-    font-family: 'Open Sans', sans-serif
   .search, .line, .collection
     margin: auto
   .search
@@ -76,7 +74,6 @@
       margin-right: 17px
   .search:hover, .collection:hover
     cursor: pointer
-
 
 .slider1-center
   max-width: 1570px
@@ -117,7 +114,6 @@
   p
     font-weight: 600
     font-size: 18px
-    font-family: 'Open Sans', sans-serif
   p::after
     content: "	\2192"
     color: #7048e2
@@ -137,8 +133,6 @@
   position: relative
   background: #ffffff
   box-shadow: -1px 5px 47px 3px rgba(236,235,253,0.75)
-  .decor4, .decor5, .decor6, .decor7, .decor8, .decor9, .decor10
-    position: absolute
   .decor4
     top: 10vh
     left: 14vw
@@ -163,27 +157,28 @@
     top: 120vh
     left: -2.3vw
 
-
 .slider2-title
   text-align: center
   padding-top: 96px
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
   box-sizing: border-box
   position: relative
   p
-    font-family: 'Open Sans', sans-serif
     font-weight: 700
     font-size: 50px
 
 .slider2-content
+  @extend %flex
   max-width: 1170px
   margin: 117px auto 0 auto
-  display: flex
-  justify-content: space-between
   flex-wrap: wrap
   padding-bottom: 96px
   .content
     width: 352px
     height: 452px
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
     box-sizing: border-box
     padding-top: 36px
     a
@@ -201,28 +196,24 @@
       margin-bottom: 10px
       margin-top: 20px
       p
-        font-family: 'Open Sans', sans-serif
         font-size: 18px
     .price
       p
-        font-family: 'Open Sans', sans-serif
         font-size: 25px
         font-weight: 600
   .content:hover
     position: relative
     box-shadow: -1px 5px 47px 3px rgba(221,223,224,0.75)
     .review
+      @extend %flex
       width: 312px
       margin: 0 auto
-      display: flex
-      justify-content: space-between
       top: 20px
       left: 20px
       position: absolute
       .like, .comment
         display: flex
       .like p, .comment p
-        font-family: 'Open Sans', sans-serif
         font-size: 14px
         color: #bbbbbb
       .like img, .comment img
@@ -241,7 +232,6 @@
       box-shadow: -1px 5px 24px 1px rgba(239,239,253,0.75)
       margin: 30px auto 0 auto
       p
-        font-family: 'Open Sans', sans-serif
         font-weight: 600
         font-size: 20px
         margin: auto
@@ -254,8 +244,6 @@
   width: 100%
   background: #ffffff
   position: relative
-  .decor11, .decor12, .decor13
-    position: absolute
   .decor11
     top: 60vh
     left: 17vw
@@ -267,28 +255,24 @@
     left: 32vw
 
 .slider3-content
+  @extend %flex
   max-width: 1170px
   margin: 0 auto
-  display: flex
-  justify-content: space-between
   padding: 43px 40px 100px 40px
 
 .slider3-content-left
   max-width: 512px
   .title
-    font-family: 'Open Sans', sans-serif
     font-weight: 700
     font-size: 50px
     margin-bottom: 20px
     margin-top: 258px
   .text1
-    font-family: 'Open Sans', sans-serif
     font-size: 25px
     margin-bottom: 20px
     span
       color: #8d83f9
   .text2
-    font-family: 'Open Sans', sans-serif
     font-size: 16px
     margin-bottom: 290px
     color: #909090
@@ -297,7 +281,6 @@
   position: relative
   margin: 0 auto
   .img1
-    /*margin-left: 30px*/
     margin-top: 120px
     z-index: 1
     position: relative
@@ -315,8 +298,6 @@
   position: relative
   background: #ffffff
   box-shadow: -1px 5px 47px 3px rgba(236,235,253,0.75)
-  .decor14, .decor15, .decor16, .decor17, .decor18, .decor19
-    position: absolute
   .decor14
     top: 90vh
     left: -2vw
@@ -340,26 +321,27 @@
   text-align: center
   padding-top: 96px
   padding-bottom: 104px
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
   box-sizing: border-box
   position: relative
   p
-    font-family: 'Open Sans', sans-serif
     font-weight: 700
     font-size: 50px
 
+$slider4-menu-max-width: 1105px
 .slider4-menu
   max-width: 1105px
   box-shadow: -1px 5px 47px 3px rgba(239,239,240,0.75)
   height: 66px
   margin: 0 auto 80px auto
+  border-radius: calc(#{$slider4-menu-max-width}/2)
   ul
-    display: flex
-    justify-content: space-between
+    @extend %flex
     padding: 0 112px
     height: inherit
     li
       list-style-type: none
-      font-family: 'Open Sans', sans-serif
       font-weight: 600
       font-size: 15px
       height: auto
@@ -367,7 +349,6 @@
     .menu-list:hover
       color: #b394fa
       cursor: pointer
-
 
 .slider4-active
   font-size: 20px !important
@@ -385,17 +366,17 @@
 .slider4-comment1, .slider4-comment2, .slider4-comment4, .slider4-comment5, .slider4-comment6
   display: none
 
-
 .slider4-content
+  @extend %flex
   max-width: 1170px
   margin: 0 auto
-  display: flex
-  justify-content: space-between
   flex-wrap: wrap
   padding-bottom: 96px
   .content
     width: 352px
     height: 462px
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
     box-sizing: border-box
     padding-top: 36px
     a
@@ -413,28 +394,24 @@
       margin-bottom: 10px
       margin-top: 20px
       p
-        font-family: 'Open Sans', sans-serif
         font-size: 18px
     .price
       p
-        font-family: 'Open Sans', sans-serif
         font-size: 25px
         font-weight: 600
   .content:hover
     position: relative
     box-shadow: -1px 5px 47px 3px rgba(221,223,224,0.75)
     .review
+      @extend %flex
       width: 312px
       margin: 0 auto
-      display: flex
-      justify-content: space-between
       top: 20px
       left: 20px
       position: absolute
       .like, .comment
         display: flex
       .like p, .comment p
-        font-family: 'Open Sans', sans-serif
         font-size: 14px
         color: #bbbbbb
       .like img, .comment img
@@ -454,7 +431,6 @@
       box-shadow: -1px 5px 24px 1px rgba(239,239,253,0.75)
       margin: 20px auto 0 auto
       p
-        font-family: 'Open Sans', sans-serif
         font-weight: 600
         font-size: 20px
         margin: auto
@@ -462,7 +438,6 @@
     .button:hover
       cursor: pointer
       background-image: linear-gradient(26.0deg, #b7acfc 26%, #c598f9 73%)
-
 
 /*БЛОК 5*/
 
@@ -477,13 +452,11 @@
   position: relative
   .title
     text-align: center
-    font-family: 'Open Sans', sans-serif
     font-weight: 700
     font-size: 50px
     color: #ffffff
     margin-bottom: 84px
   .text
-    font-family: 'Open Sans', sans-serif
     font-size: 150px
     text-transform: uppercase
     color: #ffffff
@@ -504,16 +477,16 @@
         border: none
         box-shadow: none
       input[placeholder]
-        font-family: 'Open Sans', sans-serif
         font-size: 20px
         color: #333333
         padding-left: 30px
+        -moz-box-sizing: border-box
+        -webkit-box-sizing: border-box
         box-sizing: border-box
       input[type="submit"]
         width: 198px
         height: 60px
         color: #ffffff
-        font-family: 'Open Sans', sans-serif
         font-weight: 600
         font-size: 20px
         border-radius: 99px
@@ -544,12 +517,10 @@
   .menu
     margin-bottom: 50px
     ul
-      display: flex
-      justify-content: space-between
+      @extend %flex
       li
         list-style-type: none
         a
-          font-family: 'Open Sans', sans-serif
           font-weight: 600
           font-size: 18px
           text-decoration: none
@@ -557,8 +528,7 @@
         a:hover
           color: #8c84f9
   .social
-    display: flex
-    justify-content: space-between
+    @extend %flex
     max-width: 310px
     margin: 0 auto 50px auto
     .p
@@ -567,6 +537,8 @@
       border-radius: 50%
       border: 3px solid #f6f5f7
       display: flex
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
       box-sizing: border-box
       a
         display: flex
@@ -579,11 +551,10 @@
     .p:hover
       background: linear-gradient(27.0deg, #8c84f9 8%, #9b6df5 91%)
       border: none
-      box-shadow: -2px 8px 19px 0px rgba(207,207,208,0.75)
+      box-shadow: -2px 8px 19px 0 rgba(207,207,208,0.75)
       img
         filter: invert(1)
         opacity: 100%
-
 
 .slider6-bottom
   width: 100%
